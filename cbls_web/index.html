@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Website Title</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EDF010G6PN"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EDF010G6PN');
+  </script>
+
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./static/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="./static/slick/slick-theme.css"/>
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="#">
+            Research Project
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+</body>
+</html>
+
+<!-- <section class="hero">
+  <div class="hero-body">
+    <div class="container">
+      <div class="container has-text-centered">
+		<h1 class="title is-1 publication-title">
+		  SSFold:Learning to Fold Arbitrary Crumpled<br/>
+		   Cloth Using Graph Dynamics from Human Demonstration
+		</h1>
+        <div class="is-size-5 publication-authors">
+          <div class="author-block">
+			ChangShi Zhou
+          </div>
+          <div class="author-block">
+            Haichuan Xu
+          </div>
+		  <div class="author-block">
+		    Jiarui Hu
+		  </div>
+		  <div class="author-block">
+		    Feng Luan
+		  </div>
+          <div class="author-block">
+            Zhipeng Wang
+          </div>
+          <div class="author-block">
+            Yanchao Dong
+          </div>
+          <div class="author-block">
+            Yanmin Zhou
+          </div>
+          <div class="author-block">
+            Bin He
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container">
+      <div class="container has-text-centered">
+		<h1 class="title is-1 publication-title">
+		  <!-- SSFold:Learning to Fold Arbitrary Crumpled<br/>
+		   Cloth Using Graph Dynamics from Human Demonstration -->
+		  Conflict-Based Lazy Search <br/>
+		  for Fast Multi-Manipulator Planning
+		</h1>
+        <div class="is-size-5 publication-authors">
+          <div class="author-block">
+			Dongliang Zheng, Zhipeng Wang, Siqi Wang, Yuxi Lu, Bin He, Hesheng Wang, and Panagiotis Tsiotras
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Employing multiple manipulators can boost efficiency and accomplish tasks that a single manipulator cannot do. 
+			However, real-time planning for multiple manipulators in a cluttered workspace still poses significant challenges for planning algorithms. 
+			This paper proposes a new planning algorithm called Conflict-Based Lazy Search (CBLS) for multi-manipulator planning.
+			CBLS is built on Conflict-Based Search (CBS), an efficient multi-agent pathfinding (MAPF) algorithm that has shown an order of magnitude speedup over previous approaches [1], [2].
+			CBS addresses MAPF by solving many single-agent pathfinding (SAPF) problems. Thus, its planning time directly depends on the efficiency of the SAPF algorithm adopted. 
+			Our CBLS algorithm enhances CBS with precomputation and lazy search. First, a lazily evaluated graph with controlled sparsity is precomputed for a single manipulator. 
+			Second, we propose the Lazy Edged-based A* (LEA*) for efficient SAPF. Since edge evaluation is the computational bottleneck of manipulator planning, LEA* uses lazy search and an edge queue to reduce the number of edge evaluations. 
+			We show that LEA* is optimally vertex efficient and has improved edge efficiency compared to A*. 
+			We apply the proposed CBLS to multi-manipulator planning problems and show its superior performance by comparing it with CBS and a sampling-based algorithm, namely, RRT-Connect.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+  </div>
+</section>
+
+
+<section class="hero teaser">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+	  <div style="height: 20px;"></div> <!-- 间隔 -->
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+        <!-- 第一列视频，添加右侧间隔 -->
+        <div style="flex: 1 1 30%; margin-bottom: 20px; margin-right: 1%;">
+          <video autoplay controls muted loop playsinline style="width: 100%;">
+            <source src="./static/video/corner1.mp4" type="video/mp4">
+          </video>
+        </div>	
+    </div>
+  </div>
+</section>
+
+
+<script type="text/javascript" src="./static/slick/slick.min.js"></script>
+</body>
+</html>
